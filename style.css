@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis|Oswald:400);
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+ol ol {
+  border-bottom: 1px solid black;
+}
+
+ol ol li {
+  list-style-type: upper-alpha;
+}
+
+
+fieldset {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #FFFFCC;
+}
+
+.home{
+    margin-top: 15%;
+}
+
+
+.UN{
+    position: relative;
+    left: -38px;
+}
+
+.UrN label{
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: -10px;
+}
+
+.PaW{
+  position: relative;
+    left: -22px;
+}
+
+.Hint{
+  font-family: 'Dosis', sans-serif;
+  position: relative;
+    left: 18px;
+    top:  -5px;
+}
+.group{
+  margin-top: 77px;
+  margin-bottom: 77px;
+}
+
+.home a{
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  border: 5px double red;
+  text-align: center;
+}
+

@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis|Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Exo:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+.default { 
+  background: #292929; 
+  border: 1px solid #111;  
+  border-radius: 5px;  
+  overflow: hidden; 
+  box-shadow: 0 0 5px #333;        
+  width: 50%;
+ } 
+ .default div { 
+  font-family: 'Exo', sans-serif;
+  font-size: 13px;
+  padding: 1px;  
+  color: white; 
+  text-align: right; 
+  text-shadow: 0px 0px 2px #000;  
+  overflow: hidden; 
+  background-image:-webkit-gradient(linear,71% 25%,71% 69%,color-stop(0, rgb(118,177,1)),color-stop(0.47, rgb(118,177,1)),color-stop(0.48, rgb(102,153,0)),color-stop(1, rgb(102,153,0))); 
+  background-image:-webkit-linear-gradient(-90deg,rgb(118,177,1) 0%,rgb(118,177,1) 47%,rgb(102,153,0) 48%,rgb(102,153,0) 100%); 
+  background-image:-moz-linear-gradient(71% 25% -180deg,rgb(118,177,1) 0%,rgb(118,177,1) 47%,rgb(102,153,0) 48%,rgb(102,153,0) 100%); 
+  background-image:linear-gradient(-180deg,rgb(118,177,1) 0%,rgb(118,177,1) 47%,rgb(102,153,0) 48%,rgb(102,153,0) 100%); 
+ } 
+
+
+#p0 {width: 0%;} #p1 {width: 1%;} #p2 {width: 2%;} #p3 {width: 3%;} #p4 {width: 4%;} #p5 {width: 5%;} #p6 {width: 6%;} #p7 {width: 7%;} #p8 {width: 8%;} #p9 {width: 9%;} #p10 {width: 10%;} #p11 {width: 11%;} #p12 {width: 12%;} #p13 {width:13%;} #p14 {width: 14%;} #p15 {width: 15%;} #p16 {width: 16%;} #p17 {width: 17%;} #p18 {width: 18%;} #p19 {width: 19%;} #p20 {width: 20%;} #p21 {width: 21%;} #p22 {width: 22%;} #p23 {width: 23%;} #p24 {width: 24%;} #p25 {width: 25%;} #p26 {width: 26%;} #p27 {width: 27%;} #p28 {width: 28%;} #p29 {width: 29%;} #p30 {width: 30%;} #p31 {width: 31%;} #p32 {width: 32%;} #p33 {width: 33%;} #p34 {width: 34%;} #p35 {width: 35%;} #p36 {width: 36%;} #p37 {width: 37%;} #p38 {width: 38%;} #p39 {width: 39%;} #p40 {width: 40%;} #p41 {width: 41%;} #p42 {width: 42%;} #p43 {width: 43%;} #p44 {width: 44%;} #p45 {width: 45%;} #p46 {width: 46%;} #p47 {width: 47%;} #p48 {width: 48%;} #p49 {width: 49%;} #p50 {width: 50%;} #p51 {width: 51%;} #p52 {width: 52%;} #p53 {width: 53%;} #p54 {width: 54%;} #p55 {width: 55%;} #p56 {width: 56%;} #p57 {width: 57%;} #p58 {width: 58%;} #p59 {width: 59%;}#p60 {width: 60%;} #p61 {width: 61%;} #p62 {width: 62%;} #p63 {width: 63%;} #p64 {width: 64%;} #p65 {width: 65%;} #p66 {width: 66%;} #p67 {width: 67%;} #p68 {width: 68%;} #p69 {width: 69%;} #p70 {width: 70%;} #p71 {width: 71%;} #p72 {width: 72%;} #p73 {width: 73%;} #p74 {width: 74%;} #p75 {width: 75%;} #p76 {width: 76%;} #p77 {width: 77%;} #p78 {width: 78%;} #p79 {width: 79%;} #p80 {width: 80%;} #p81 {width: 81%;} #p82 {width: 82%;} #p83 {width: 83%;} #p84 {width: 84%;} #p85{width: 85%;} #p86 {width: 86%;} #p87 {width: 87%;} #p88 {width: 88%;} #p89 {width: 89%;} #p90 {width: 90%;} #p91 {width: 91%;} #p92 {width: 92%;} #p93 {width:93%;} #p94 {width: 94%;} #p95 {width: 95%;} #p96 {width: 96%;} #p97 {width: 97%;} #p98 {width: 98%;} #p99 {width: 99%;} #p100 {width: 100%;}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+label {
+  margin-right: 5px;
+}
+
+.quizBody{
+  font-size: 36px;
+  
+}
+
+.inline {
+  display: inline-block;
+  margin-left: 30%;
+}
+
+.inline1 {
+  display: inline-block;
+  margin-left: 40%;
+}
+
+ol ol {
+  border-bottom: 1px solid black;
+}
+
+ol ol li {
+  list-style-type: upper-alpha;
+}
+
+
+fieldset {
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0px;
+  background-color: #fff;
+}
+
+.home{
+    margin-top: 1%;
+}
+
+
+.UN{
+    position: relative;
+    left: -38px;
+}
+
+.UrN label{
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: -10px;
+}
+
+.PaW{
+  position: relative;
+    left: -22px;
+}
+
+.Hint{
+  font-family: 'Dosis', sans-serif;
+  position: relative;
+    left: 18px;
+    top:  -5px;
+}
+.group{
+  width:50%;
+  margin: 77px auto 77px auto;
+}
+
+.home a{
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  clear: both;
+  font-weight: bold;
+  margin:48px auto 0px auto;
+}
+
+.error {
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  border: 5px double red;
+  text-align: center;
+}
+
