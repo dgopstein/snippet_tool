@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>End</title>
 <link rel = "stylesheet"
   type = "text/css"
   href = "home.css" /> 
@@ -12,7 +12,7 @@
 	{
     	function __construct()
     	{
-      	  	$this->open('confustion.db');
+      	  	$this->open('confusion.db');
     	}
 	}
   $id=filter_input(INPUT_POST, "ID");
@@ -40,7 +40,7 @@
   print <<<HERE
   <div class="home">
   <fieldset>
-    <h4 align="center" style="color:red">Thank you! We really appreciate your Time and Participation!</h4>
+    <h4 align="center" style="color:red">Thank you again for taking the time to participate in this research study.</h4>
   </fieldset>
   </div>
 HERE;

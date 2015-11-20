@@ -1,6 +1,0 @@
-AuthName "Atom Section"
-	AuthGroupFile /dev/null
-	AuthType Basic
-	AuthUserFile /home5/ckxrchen/.htpasswds/.htpasswds
-	Require valid-user
- 

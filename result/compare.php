@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Compare</title>
 </head>
 <body>
 <a href="questions.php">Questions -></a> <br />
-<a href="admin.php">Results -></a> 
+<a href="admin.php">Results -></a>
+<br /> 
 <?php  
 	class MyDB extends SQLite3
 	{
     	function __construct()
     	{
-      	  	$this->open('../confustion.db');
+      	  	$this->open('../confusion.db');
     	}
 	}
   $db = new MyDB();

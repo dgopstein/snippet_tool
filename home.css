@@ -43,13 +43,9 @@ label {
 
 .inline {
   display: inline-block;
-  margin-left: 30%;
+  margin-left: 10%;
 }
 
-.inline1 {
-  display: inline-block;
-  margin-left: 40%;
-}
 
 ol ol {
   border-bottom: 1px solid black;

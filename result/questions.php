@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Questions</title>
 </head>
 <body>
 <a href="compare.php">Confusing and Non-confusing Comparison -></a> <br />
@@ -11,7 +11,7 @@
 	{
     	function __construct()
     	{
-      	  	$this->open('../confustion.db');
+      	  	$this->open('../confusion.db');
     	}
 	}
   $db = new MyDB();

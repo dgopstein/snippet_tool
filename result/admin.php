@@ -4,13 +4,15 @@
 
 <head>
 
-	<title></title>
+	<title>Results</title>
 
 </head>
 
 <body>
 <a href="compare.php">Confusing and Non-confusing Comparison -></a> <br />
-<a href="questions.php">Questions -></a> 
+<a href="questions.php">Questions -></a><br />
+<a href="backup.php">Backup Database -></a><br />
+<a href="reset.php">Reset Database -></a> 
 <?php  
 
 	class MyDB extends SQLite3
@@ -21,7 +23,7 @@
 
     	{
 
-      	  	$this->open('../confustion.db');
+      	  	$this->open('../confusion.db');
 
     	}
 

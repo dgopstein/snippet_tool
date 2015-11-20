@@ -16,7 +16,7 @@ class MyDB extends SQLite3
 {
     function __construct()
     {
-        $this->open('confustion.db');
+        $this->open('confusion.db');
     }
 }
 $start=filter_input(INPUT_GET, "s");
@@ -120,6 +120,7 @@ if($start=="1"){
 }
 else{ //grade last question
 	$ans=filter_input(INPUT_POST,"ANS");
+	$ans = trim(preg_replace('!\s+!', ' ', $ans));
 		$xml = simplexml_load_file("User$id.xml");
 		$QuesitonTag="q".$count;
 		$codeID = $xml->User->$QuesitonTag;
@@ -150,7 +151,7 @@ else{ //grade last question
 
 					##########################################
 					//Progress Bar
-					$percentage=round(($count-1)/36*100);
+					$percentage=round(($count-1)/40*100);
 					print <<<HERE
 					 <div align="center">
 					 	<div align="left" id="progressBar" class="default"><div id="p$percentage">$percentage%</div></div> 
@@ -167,7 +168,7 @@ HERE;
 						$results = $stmt->execute();  
 						$row=$results->fetchArray();
 						$quizBody=$row['Code'];
-						if ($count<36){
+						if ($count<40){
 							print <<<HERE
 									<form action = "takeQuiz.php"
 								 	method = "post">

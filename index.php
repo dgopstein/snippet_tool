@@ -16,14 +16,14 @@
 <div class="home">
   <fieldset>
   <div class="group">
-  <h2>Sign UP to Take a quiz!</h2>
+  <h2>Please enter the pseudonym you were assigned</h2>
   <p align="center" class="UrN">
-     <label>User ID</label>
+     <label>Pseudonym</label>
     <input type = "text"
            name = "ID" autofocus autocomplete="off"/>
            </p>
     <button type = "submit">
-      Take quiz
+      Next
     </button>
     </div>
   </fieldset>

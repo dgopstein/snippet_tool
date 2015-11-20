@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<title>Survey</title>
 <link rel = "stylesheet"
   type = "text/css"
   href = "home.css" /> 
@@ -12,13 +12,14 @@
 	{
     	function __construct()
     	{
-      	  	$this->open('confustion.db');
+      	  	$this->open('confusion.db');
     	}
 	}
 	$id=filter_input(INPUT_POST, "ID");
   	$count=filter_input(INPUT_POST,"COUNT");
 	##########################################
 	$ans=filter_input(INPUT_POST,"ANS");
+    $ans = trim(preg_replace('!\s+!', ' ', $ans));
     $xml = simplexml_load_file("User$id.xml");
     $QuesitonTag="q".$count;
     $codeID = $xml->User->$QuesitonTag;
@@ -55,7 +56,7 @@
           $total=$total+$row['Duration'];
           if($row['Correct']=="T") $cc=$cc+1;
     }
-    $score=($cc*100)/36;
+    $score=($cc*100)/40;
     $score=intval($score);
     $stmt = $db->prepare('UPDATE user SET Score=:S, Duration=:D WHERE ID=:id');
     $stmt->bindValue(':S', $score);
@@ -74,7 +75,7 @@ HERE;
     <div class="home">
     <fieldset>
     <div class="group">
-    <h4 align="center" style="color:red">You have finished all quizs!<br />Thank you! Here are some servey questions!</h4>
+    <h4 align="center" style="color:red">You have finished all quizzes!<br />Please complete the short survey below</h4>
     <p align="left">1. What is your age (as of today)?</p>
     <input type = "text" name = "ANS1" autofocus autocomplete="off"/>
     <p align="left">2. What is your gender? </p>
@@ -87,17 +88,17 @@ HERE;
     <option value="Doctoral Degree">Doctoral Degree</option>
     <option value="Professional Degree">Professional Degree</option>
   	</select>
-    <p align="left">4. When did you first learn C/C++? (Please report month and year such as 11/2008. If you do not member the month, then simply write the year.) </p>
+    <p align="left">4. When did you first learn C/C++? (Please report month and year, such as 11/2008. If you do not member the month, then simply write the year.) </p>
     <input type = "text" name = "ANS4"  autocomplete="off"/>
-    <p align="left">5. If you first learn C/C++ formally (at school or in a training), please tell us where. </p>
+    <p align="left">5. If you first learn C/C++ formally (at school or in a training), please let us know where. </p>
     <input type = "text" name = "ANS5"  autocomplete="off"/>
-    <p align="left">6. If you first learn C/C++ informally (self-taught or using online tutorial), please tell us how. </p>
+    <p align="left">6. If you first learn C/C++ informally (self-taught or using online tutorial), please tell us what method you used. </p>
     <input type = "text" name = "ANS6"  autocomplete="off"/>
-    <p align="left">7. When was the last time you use C/C++? (Please report month and year such as 8/2015. If you do not remember the month, then simply write the year.) </p>
+    <p align="left">7. When was the last time you used C/C++? (Please report month and year, such as 8/2015. If you do not remember the month, then simply write the year.) </p>
     <input type = "text" name = "ANS7"  autocomplete="off"/>
     <p align="left">8. If C/C++ is not your dominate programming language, please tell us what is your dominate programming language, for example Java, PHP, Python, etc. </p>
     <input type = "text" name = "ANS8"  autocomplete="off"/>
-    <button type = "submit">Next</button>
+    <button type = "submit">Finish</button>
     <input type = "hidden" name = "ID" value=$id />
     </div>
     </fieldset>
