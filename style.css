@@ -42,6 +42,17 @@ fieldset {
     left: -10px;
 }
 
+.PwD label{
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: -10px;
+}
+
+.PwD input{
+    position: relative;
+    left: 2px;
+}
+
 .PaW{
   position: relative;
     left: -22px;

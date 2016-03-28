@@ -5,7 +5,7 @@
 </head>
 <body>
 <a href="questions.php">Questions -></a> <br />
-<a href="admin.php">Results -></a>
+<a href="admin.php">Results -></a><br />
 <br /> 
 <?php  
 	class MyDB extends SQLite3
@@ -16,7 +16,7 @@
     	}
 	}
   $db = new MyDB();
-  $stmt=$db->prepare('SELECT ID,Pair FROM Code WHERE Type=:type');
+  $stmt=$db->prepare('SELECT ID,Pair FROM Code WHERE Type=:type ORDER BY ID ASC');
   $stmt->bindValue(':type',"Confusing");
   $results = $stmt->execute();  
   $output= <<<HERE

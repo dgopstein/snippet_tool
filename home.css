@@ -37,13 +37,13 @@ label {
 }
 
 .quizBody{
-  font-size: 36px;
+  font-size: 28px;
   
 }
 
 .inline {
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 
@@ -54,6 +54,8 @@ ol ol {
 ol ol li {
   list-style-type: upper-alpha;
 }
+
+ul li { padding: 5px 0px; }
 
 
 fieldset {

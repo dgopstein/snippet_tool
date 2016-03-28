@@ -1,0 +1,7 @@
+[17-Nov-2015 13:25:04 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home5/ckxrchen/public_html/Atom/result/reset.php on line 4
+[20-Nov-2015 18:38:38 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100
+[20-Nov-2015 18:38:46 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100
+[20-Nov-2015 18:38:53 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100
+[20-Nov-2015 18:44:49 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100
+[20-Nov-2015 18:44:51 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100
+[20-Nov-2015 18:45:11 America/Denver] PHP Parse error:  syntax error, unexpected '$correctAns' (T_VARIABLE) in /home5/ckxrchen/public_html/Atom/result/admin.php on line 100

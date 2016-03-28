@@ -1,0 +1,6 @@
+AuthName "Atom Section"
+	AuthGroupFile /dev/null
+	AuthType Basic
+	AuthUserFile /pass/users/x/v/xvc5068/www/.htpasswds
+	Require valid-user
+ 
