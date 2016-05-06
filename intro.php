@@ -123,7 +123,7 @@ else if ($page == 7){
 <div class="home">
   <fieldset>
   <div class="group">
-  <p>You will see only one question at a time. You cannot go back to a previous question to change your answer. When you are ready, click "Start the Experiment" to start.</p>
+  <p>You will see only one question at a time. You cannot go back to a previous question to change your answer. Once the experiment starts you should not take any break until the experiment is finished.</p><p>When you are ready, click "Start the Experiment" to start.</p>
   <button type = "submit" id = "start">Start the Experiment</button>
   </div>
   </fieldset>

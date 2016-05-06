@@ -116,6 +116,33 @@ $(function() {
     });
   });
 });
+
+$(document).unbind('keydown').bind('keydown', function (event) {
+    var doPrevent = false;
+    if (event.keyCode === 8) {
+        var d = event.srcElement || event.target;
+        if ((d.tagName.toUpperCase() === 'INPUT' && 
+             (
+                 d.type.toUpperCase() === 'TEXT' ||
+                 d.type.toUpperCase() === 'PASSWORD' || 
+                 d.type.toUpperCase() === 'FILE' || 
+                 d.type.toUpperCase() === 'SEARCH' || 
+                 d.type.toUpperCase() === 'EMAIL' || 
+                 d.type.toUpperCase() === 'NUMBER' || 
+                 d.type.toUpperCase() === 'DATE' )
+             ) || 
+             d.tagName.toUpperCase() === 'TEXTAREA') {
+            doPrevent = d.readOnly || d.disabled;
+        }
+        else {
+            doPrevent = true;
+        }
+    }
+
+    if (doPrevent) {
+        event.preventDefault();
+    }
+});
 </script>
 <script type="text/javascript">
     function stoppedTyping(){
@@ -126,15 +153,31 @@ $(function() {
 	var idleTime = 0;
 	var idleStart = 0;
 	var idleEnd = 0;
+	var ID = "<?php echo $id; ?>";
+    var COUNT = "<?php echo $count; ?>";
+    ifvisible.setIdleDuration(20);
 
-    ifvisible.idle(function(){
+    ifvisible.blur(function(){
     	idleStart = new Date();
+    	$.post('log.php',{ ID: ID, CodeID: COUNT, Event: "00" },
+    	function(data){});
     });
 
     ifvisible.wakeup(function(){
         idleEnd = new Date();
        	idleTime = idleEnd - idleStart + idleTime;
        	document.getElementById('idleTime').value = idleTime;
+
+       	$.post('log.php',{ ID: ID, CodeID: COUNT, Event: "01" },
+    	function(data){});
+    });
+
+    ifvisible.idle(function(){
+    	idleStart = new Date();
+		if(!ifvisible.now('hidden')){
+    		$.post('log.php',{ ID: ID, CodeID: COUNT, Event: "02" },
+    		function(data){});
+		} 
     });
 
 

@@ -28,7 +28,7 @@
       $output= <<<HERE
       <table style="width:45%">
         <tr>
-          <td><h3>User ID: $ID</h3></td>
+          <td><h3>User ID: <a href="../User$id.xml" target="_blank">$ID</a></h3></td>
           <td><h3>Total Score: $score</h3></td> 
           <td><h3>Total Time Spent: $duration</h3></td>
           <td><h3>Finished At $lastLogin</h3></td>
@@ -68,7 +68,7 @@ HERE;
           $output.=<<<HERE
 
           <tr>
-            <td>$codeID</td> 
+            <td><a href="questions.php#$codeID">$codeID</a></td> 
             <td>$duration</td>
             <td>$answer</td>
             <td>$correct</td>

@@ -126,8 +126,9 @@
   	$results=$db->query('SELECT ID FROM User');
   	$id=1;
   	while($row=$results->fetchArray()) $id++;
-  	$stmt = $db->prepare('INSERT INTO User (ID, Browser) VALUES (:id,:b)');
+  	$stmt = $db->prepare('INSERT INTO User (ID, Name, Browser) VALUES (:id,:n,:b)');
   	$stmt->bindValue(':id', $id);
+  	$stmt->bindValue(':n', $Username);
   	$stmt->bindValue(':b',$Browser);
   	$results = $stmt->execute();
   	$db->close();

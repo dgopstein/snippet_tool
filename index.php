@@ -37,7 +37,7 @@ $(function() {
 <div class="home">
   <fieldset>
   <div class="group">
-  <h2>Please enter the ID and password you are assigned</h2>
+  <h2>Please enter the username and password you are assigned</h2>
   <p align="center" class="UrN">
      <label>Username</label>
     <input type = "text"
